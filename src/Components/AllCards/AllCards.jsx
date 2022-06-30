@@ -4,10 +4,10 @@ import React from "react";
 
 function AllCards(props) {
     if (props.data == null) {return null}
-    const masOfCards = props.data.map((card) =>
+    const arrOfCards = props.data.map((card) =>
         <Card key={props.data.indexOf(card)}  dateOfCreation={getCurrentDate(card.id)} urlImgContent={card.url}/>
     );
-    return (masOfCards);
+    return (arrOfCards);
 }
 
 export default AllCards

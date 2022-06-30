@@ -17,7 +17,7 @@ function Card(props){
         <div className="card" >
             <div className="cardContentContainer">
                 <img  className="cardImg" src={props.urlImgContent} alt="здесь ожидалась картинка" ></img>
-                <span className="cardText1">Дата добавления: <br></br> {props.dateOfCreation}</span>
+                <span className="cardText">Дата добавления: <br></br> {props.dateOfCreation}</span>
                 <I Liked={heartLiked} className="fa fa-heart"  aria-hidden="true" onClick={changeLiked} ></I>
             </div>
         </div>
